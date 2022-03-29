@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
+    <title>KNAP</title>
+    <!-- CSS Odometer -->
+    <link rel="stylesheet" href="./css/odometer-theme-default.css">
+    <!-- CSS slick 輪播圖 -->
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- 自訂意CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="top_header" class="top_header">
+        <div class="top_header_wrapper">
+            <h1 class="top_header_logo">
+                <a href="./index.html" class="top_header_logo_link">KNAP</a>
+            </h1>
+            <div  class="top_header_menu" id="menu">
+                <ul class="top_header_menu_wrapper">
+                    <li class="top_header_menu_list">
+                        <a href="./works.html" class="top_header_menu_list_link js-hoverline-events_menu">WORK</a></li>
+                    <li class="top_header_menu_list">
+                        <a href="./about.html" class="top_header_menu_list_link js-hoverline-events_menu">ABOUT</a>
+                    </li>
+                    <li class="top_header_menu_list">
+                        <a href="./service.html" class="top_header_menu_list_link js-hoverline-events_menu">SERVICE</a></li>
+                    <li class="top_header_menu_list">
+                        <a href="./contact.html" class="top_header_menu_list_link js-hoverline-events_menu">CONTACT</a></li>
+                </ul>
+                <bottom class="top_header_menu_btn ">
+                    <svg class="c-btn_arrow" viewBox="0 0 232.5 226.8" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M202,127.1H30.5v-3.9h142.3c-2.4-0.6-4.7-1.3-6.8-2c-28.6-9-37.2-21.2-37.5-21.6c4.8,4.3,27.7,12.4,39.5,16.4
+                    c4.4,1.5,10.1,3.4,15.7,5.2C192.7,124.2,201.3,126.9,202,127.1C202,127.1,202,127.1,202,127.1z"/></svg><span>MENU</span>
+                    </bottom>
+            </div>
+            <bottom id="btn_close" class="c-btn_close hide">
+                <ion-icon class="btn_close js-pointer-events" name="close"></ion-icon>
+            </bottom>
+        </div>
+    </header>
+    <nav  id="ham" class="top_nav_ham-menu is-load">
+        <div class="top_nav_ham-menu_wrapper">
+            <div class="top_nav_ham-menu_main">
+                <div class="top_nav_ham-menu_main_picture_wrapper">
+                    <figure class="top_nav_ham-menu_main_picture   " id="ham_img" ><img src="./img/common/l-header_nav_main_img.png" alt="l-header_nav_main_img.png"></figure>
+                </div>
+                <div id='ham_list' class="top_nav_ham-menu_main_sub_wrapper" >
+                    <ul  class="top_nav_ham-menu_main_sub">
+                        <li id="ham_list_1" class="top_nav_ham-menu_main_sub_list   "   ><a href="./index.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Home</a></li>
+                        <li id="ham_list_2" class="top_nav_ham-menu_main_sub_list   "   ><a href="./works.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Work</a></li>
+                        <li id="ham_list_3" class="top_nav_ham-menu_main_sub_list   "   ><a href="./about.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">About</a></li>
+                        <li id="ham_list_4" class="top_nav_ham-menu_main_sub_list   "   ><a href="./service.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Service</a></li>
+                    </ul>
+                    <ul class="top_nav_ham-menu_main_sub">
+                        <li id="ham_list_5" class="top_nav_ham-menu_main_sub_list   "   ><a href="./member.html" class="top_nav_ham-menu_main_sub_list_link pointer-events_line">Member</a></li>
+                        <li id="ham_list_6" class="top_nav_ham-menu_main_sub_list   "   ><a href="./recruit.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Recruit</a></li>
+                        <li id="ham_list_7" class="top_nav_ham-menu_main_sub_list   "   ><a href="#aside_access" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events ">Access</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top_nav_ham-menu_contact_wrapper   " id='ham_contact'>
+                <div class="top_nav_ham-menu_contact">
+                    <a href="./contact.html" class="top_nav_ham-menu_contact_link">Contact</a>
+                </div>
+                <div class="top_nav_ham-menu_contact_sub_wrapper">
+                    <ul class="top_nav_ham-menu_contact_sub">
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">blog</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">yomoyamo</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">comogomo</a></li>
+                    </ul>
+                    <ul class="top_nav_ham-menu_contact_sub">
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">Instagrem</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">Facebook</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="barba_wrapper">
+        <div class="wrapper_top">
+            <main class="member">
+                <section class="l-member">
+                    <div class=" l-member_title_wrapper">
+                        <h2 class="l-member_title c-title">Member</h2>
+                        <ul class="c-title_sub_wrapper">
+                            <li class="c-title_sub_list">
+                                <a href="./index.html" class="c-title_sub_list_link">Home</a>
+                            </li>
+                            <li class="c-title_sub_list">Member</li>
+                        </ul>
+                    </div>
+                    <div class="l-member_content_wrapper">
+                        <ul class="l-member_content">
+                            <li class="l-member_content_list member_content_list_1">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="l-member_content_picture_img" src="./img/member/l-member_list_img01.jpg" alt="l-member_list_img01.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">E.Minami</h2>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_2">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="l-member_content_picture_img" src="./img/member/l-member_list_img02.jpg" alt="l-member_list_img02.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">Y.Goto</h2>
+                                    <a class="l-member_content_list_txt_link" href="">TW</a>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_3">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="l-member_content_picture_img" src="./img/member/l-member_list_img03.jpg" alt="l-member_list_img03.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">T.Matsui</h2>
+                                    <a class="l-member_content_list_txt_link" href="">TW</a>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_4">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img04.jpg" alt="l-member_list_img04.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">M.Momose</h2>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_5">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img05.jpg" alt="l-member_list_img05.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">Y.Sakurai</h2>
+                                    <a class="l-member_content_list_txt_link" href="">TW</a>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_6">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img06.jpg" alt="l-member_list_img06.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">M.Kumekawa</h2>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_7">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img07.jpg" alt="l-member_list_img07.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">K.Suzuki</h2>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_8">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img08.jpg" alt="l-member_list_img08.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">R.Abe</h2>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_9">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img09.jpg" alt="l-member_list_img09.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- Designer</span>
+                                    <h2 class="l-member_content_list_txt">W.Adachi</h2>
+                                    <a class="l-member_content_list_txt_link" href="">TW</a>
+                                </div>
+                            </li>
+                            <li class="l-member_content_list member_content_list_10">
+                                    <div class="l-member_content_picture_wrapper">
+                                    <figure class="l-member_content_picture">
+                                        <img class="js-smoove_show_scale" src="./img/member/l-member_list_img10.jpg" alt="l-member_list_img10.jpg">
+                                    </figure>
+                                    </div>
+                                <div class="l-member_content_list_txt_wrapper">
+                                    <span class="l-member_content_list_txt_title">- CEO</span>
+                                    <h2 class="l-member_content_list_txt">M.Kawata</h2>
+                                    <a class="l-member_content_list_txt_link" href="">TW</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="l-about_next">
+                    <a class="l-about_next_link" href="./member.html">
+                        <h2 class="l-about_next_title">Next</h2>
+                        <p class="c-btn_next_wrapper">
+                                <svg class="c-btn_next_arrow" viewBox="0 0 180.1 38.8" xmlns="http://www.w3.org/2000/svg">                                <path d="M175.8,33.2H4.3v-3.9h142.3c-2.4-0.6-4.7-1.3-6.8-2c-28.6-9-37.2-21.2-37.5-21.6c4.8,4.3,27.7,12.4,39.5,16.4
+                                    c4.4,1.5,10.1,3.4,15.7,5.2C166.5,30.3,175.1,33,175.8,33.2L175.8,33.2z"/>
+                                </svg>メンバー募集 Recruit
+                        </p>
+                    </a>
+                </div>
+                <div class="bottom_picture_wrapper l-about_bottom_picture">
+                    <figure class="bottom_picture">
+                        <img src="./img/member/l-bottom_member_img.png" alt="l-bottom_member_img.png">
+                    </figure>
+                    <a href="#" class="c-btn_bottom">
+                        <svg class="c-btn_bottom_pagetop" viewBox="0 0 216.31 226.77" xmlns="http://www.w3.org/2000/svg">                                <path d="M103.92,47.53c-5.34,15.73-9.26,31.58-21.01,43.69c11.52-18.96,17.73-39.91,23.49-61.37
+                            c5.11,21.56,12.31,42.09,23.58,61.08c-3.37-1.33-8.37-9.19-12.76-19.85c-3.08-7.46-5.69-15.12-8.57-22.85
+                            c-1.78,2.07-1.08,4.33-1.09,6.4c-0.04,46.62-0.01,93.24-0.11,139.86c0,1.67,1.42,4.78-1.25,4.86c-1.93,0.06-0.96-3.03-0.96-4.66
+                            c-0.07-46.79-0.05-93.57-0.07-140.36C105.17,52.22,105.59,50.01,103.92,47.53z"/></svg>
+                    </a>
+                </div>
+            </main>
+            <aside class="scroll_odometer">
+                <ul class="scroll_odometer_wrapper">
+                    <li id="th" class="scroll_odometer_th">0</li>
+                    <li id="h" class="scroll_odometer_h">0</li>
+                    <li id="t" class="scroll_odometer_t">0</li>
+                    <li class="subs-odometer"></li>
+                    <li class="scroll_odometer_max">4300 <span class="scroll_odometer_unit">feet</span></li>
+                </ul>
+            </aside>
+            <div id="member_banner" class="banner_wrapper">
+                <a href="./recruit.html" >
+                    <figure class="banner_picture"><img src="./img/common/l-banner_pc.jpg" alt="recruit"></figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="aside_access"  class="aside_access is-load">
+        <div class="aside_access_wrapper">
+            <bottom id="btn_close_access" class="c-btn_close_access hide">
+                <a href="#" class="js-pointer-events">
+                <ion-icon class="btn_close_access" name="close"></ion-icon>
+                </a>
+            </bottom>
+            <h2 id="access_title" class="aside_access_title">Access</h2>
+            <p id="access_txt" class="aside_access_txt">〒150-0011<br>東京都渋谷区東2-17-10 岡本LKビル9F</p>
+            <figure class="aside_access_map">
+                <iframe id="access_map" class="aside_access_map_iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3242.0118315901645!2d139.7069929646812!3d35.65208013020111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2x5Lqs6YO95riL6LC35Yy65p2xMi0xNy0xMCDlsqHmnKxMS-ODk-ODqzlG!5e0!3m2!1szh-TW!2stw!4v1644678680939!5m2!1szh-TW!2stw" frameborder="0" style="border: 0px;transform: matrix(1, 0, 0, 1, 0, 0);" allowfullscreen="" loading="lazy"></iframe>
+                <figcaption id="access_sub" class="aside_access_map_sub">
+                    JR 恵比寿駅（地下鉄 恵比寿駅）より徒歩10分 <br>東急東横線 代官山駅より徒歩11分<br>JR 渋谷駅寄り徒歩15分<br>明治通り沿いファミリーマートの横がビルのエントランスです。
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+    <footer class="index_footer">
+        <div class="index_footer_wrapper">
+            <div class="index_footer_content">
+                <div class="index_footer_content_wrapper">
+                    <div class="index_footer_content_item">
+                        <h2 class="index_footer_content_item_title">Service</h2>
+                        <p class="index_footer_content_item_txt">ホームページ制作 / Webサイトデザイン / コピーライティング / 写真撮影 / 映像制作 / 広告制作 / パンフレットデザイン / チラシデザイン / ブランディング / ロゴデザイン / UIデザイン</p>
+                    </div>
+                    <div class="index_footer_content_item">
+                        <h2 class="index_footer_content_item_title">Equipment</h2>
+                        <p class="index_footer_content_item_txt">iPhone / Mac Book Pro / Sony / adobe CC / brother printer / FUJI Xerox printer / Blackmagic / DJI / Atomos / Manfrotto / Profoto</p>
+                    </div>
+                </div>
+                <p class="index_footer_content_adress">〒150-0011　東京都渋谷区東2-17-10 岡本LKビル9F 株式会社ナップ <br>Okamoto LK Building 9F, 2-17-10, shibuya-ku higashi, Tokyo, Japan  KNAP inc.</p>
+            </div>
+            <div class="index_footer_menu_wrapper">
+                <div class="index_footer_menu">
+                    <div class="index_footer_menu_content_wrapper">
+                        <ul class="index_footer_menu_content">
+                            <li class="index_footer_menu_content_list">
+                                <a href="./index.html" class="index_footer_menu_content_link js-hoverline-events">Home</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./works.html" class="index_footer_menu_content_link js-hoverline-events">Work</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./about.html" class="index_footer_menu_content_link js-hoverline-events">About</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./service.html" class="index_footer_menu_content_link js-hoverline-events">Service</a>
+                            </li>
+                        </ul>
+                        <ul class="index_footer_menu_content">
+                            <li class="index_footer_menu_content_list"
+                            ><a href="./member.html" class="index_footer_menu_content_link pointer-events_line">Member</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./recruit.html" class="index_footer_menu_content_link js-hoverline-events">Recruit</a>
+                            </li>
+                            <li id="aside_access_show" class="index_footer_menu_content_list">
+                                <a href="#aside_access" class="index_footer_menu_content_link js-hoverline-events ">Access</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="index_footer_menu_contact_wrapper">
+                    <div class="index_footer_menu_contact_title_wrapper">
+                        <a href="./contact.html" class="index_footer_menu_contact_title">Contact</a>
+                    </div>
+                    <div class="index_footer_menu_same_wrapper">
+                        <ul class="index_footer_menu_same">
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">blog</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">yomoyamo</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">comogomo</a>
+                            </li>
+                        </ul>
+                        <ul class="index_footer_menu_same">
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">Instagram</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="index_footer_copyright">
+                <small>copyright &copy; — all rights reversed.</small>
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery原生碼 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JS slick 輪播圖 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- smoove js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.11/jquery.smoove.min.js"></script>
+    <!-- JS Odometer  -->
+    <script src="./js/odometer.min.js"></script>
+    <!-- 自定義JS -->
+    <script src="./js/myjs.js"></script>
+</body>
+</html>

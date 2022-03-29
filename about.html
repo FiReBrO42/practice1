@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
+    <title>KNAP</title>
+    <!-- CSS Odometer -->
+    <link rel="stylesheet" href="./css/odometer-theme-default.css">
+    <!-- CSS slick 輪播圖 -->
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <!-- 自訂意CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="top_header" class="top_header">
+        <div class="top_header_wrapper">
+            <h1 class="top_header_logo">
+                <a href="./index.html" class="top_header_logo_link">KNAP</a>
+            </h1>
+            <div  class="top_header_menu" id="menu">
+                <ul class="top_header_menu_wrapper">
+                    <li class="top_header_menu_list">
+                        <a href="./works.html" class="top_header_menu_list_link js-hoverline-events_menu">WORK</a></li>
+                    <li class="top_header_menu_list">
+                        <a href="./about.html" class="top_header_menu_list_link pointer-events_line">ABOUT</a>
+                    </li>
+                    <li class="top_header_menu_list">
+                        <a href="./service.html" class="top_header_menu_list_link js-hoverline-events_menu">SERVICE</a></li>
+                    <li class="top_header_menu_list">
+                        <a href="./contact.html" class="top_header_menu_list_link js-hoverline-events_menu">CONTACT</a></li>
+                </ul>
+                <bottom class="top_header_menu_btn ">
+                    <svg class="c-btn_arrow" viewBox="0 0 232.5 226.8" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M202,127.1H30.5v-3.9h142.3c-2.4-0.6-4.7-1.3-6.8-2c-28.6-9-37.2-21.2-37.5-21.6c4.8,4.3,27.7,12.4,39.5,16.4
+                    c4.4,1.5,10.1,3.4,15.7,5.2C192.7,124.2,201.3,126.9,202,127.1C202,127.1,202,127.1,202,127.1z"/></svg><span>MENU</span>
+                    </bottom>
+            </div>
+            <bottom id="btn_close" class="c-btn_close hide">
+                <ion-icon class="btn_close js-pointer-events" name="close"></ion-icon>
+            </bottom>
+        </div>
+    </header>
+    <nav  id="ham" class="top_nav_ham-menu is-load">
+        <div class="top_nav_ham-menu_wrapper">
+            <div class="top_nav_ham-menu_main">
+                <div class="top_nav_ham-menu_main_picture_wrapper">
+                    <figure class="top_nav_ham-menu_main_picture   " id="ham_img" ><img src="./img/common/l-header_nav_main_img.png" alt="l-header_nav_main_img.png"></figure>
+                </div>
+                <div id='ham_list' class="top_nav_ham-menu_main_sub_wrapper" >
+                    <ul  class="top_nav_ham-menu_main_sub">
+                        <li id="ham_list_1" class="top_nav_ham-menu_main_sub_list   "   ><a href="./index.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Home</a></li>
+                        <li id="ham_list_2" class="top_nav_ham-menu_main_sub_list   "   ><a href="./works.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Work</a></li>
+                        <li id="ham_list_3" class="top_nav_ham-menu_main_sub_list   "   ><a href="./about.html" class="top_nav_ham-menu_main_sub_list_link pointer-events_line">About</a></li>
+                        <li id="ham_list_4" class="top_nav_ham-menu_main_sub_list   "   ><a href="./service.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Service</a></li>
+                    </ul>
+                    <ul class="top_nav_ham-menu_main_sub">
+                        <li id="ham_list_5" class="top_nav_ham-menu_main_sub_list   "   ><a href="./member.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Member</a></li>
+                        <li id="ham_list_6" class="top_nav_ham-menu_main_sub_list   "   ><a href="./recruit.html" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events">Recruit</a></li>
+                        <li id="ham_list_7" class="top_nav_ham-menu_main_sub_list   "   ><a href="#aside_access" class="top_nav_ham-menu_main_sub_list_link js-hoverline-events ">Access</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top_nav_ham-menu_contact_wrapper   " id='ham_contact'>
+                <div class="top_nav_ham-menu_contact">
+                    <a href="./contact.html" class="top_nav_ham-menu_contact_link">Contact</a>
+                </div>
+                <div class="top_nav_ham-menu_contact_sub_wrapper">
+                    <ul class="top_nav_ham-menu_contact_sub">
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">blog</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">yomoyamo</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">comogomo</a></li>
+                    </ul>
+                    <ul class="top_nav_ham-menu_contact_sub">
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">Instagrem</a></li>
+                        <li class="top_nav_ham-menu_contact_sub_list"><a href="" class="top_nav_ham-menu_contact_sub_list_link">Facebook</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="barba_wrapper">
+        <div class="wrapper_top">
+            <main class="about">
+                <section class="l-about">
+                    <div class=" l-about_title_wrapper">
+                        <h2 class="top_about_title c-title">About</h2>
+                        <ul class="c-title_sub_wrapper">
+                            <li class="c-title_sub_list">
+                                <a href="./index.html" class="c-title_sub_list_link">Home</a>
+                            </li>
+                            <li class="c-title_sub_list">About</li>
+                        </ul>
+                    </div>
+                    <div class="l-about_vision_culture">
+                        <div class="l-about_vision">
+                            <figure class="l-about_vision_picture_wrapper ">
+                                <img class="l-about_vision_picture" src="./img/about/l-about_vision_img.jpg" alt="l-about_vision_img.jpg">
+                            </figure>
+                            <div class="l-about_vision_content_wrapper">
+                                <h2 class="l-about_vision_content_title">Vision</h2>
+                                <p class="l-about_vision_content">
+                                    KNAP（ナップ）という単語には、小山という意味があります。そう、子どもの頃、わくわくした遠足のお供、ナップサックのナップです。<br>高さを競う高嶺でも、豊かな金山でもないけれど、頂上までのぼってみると、いつもより少し「すてき」な景色が見えます。<br>ナップはちょうどいい高さなんですね。<br>KNAPらしいちょうどよさを突き詰めながら、クリエイティブの力を信じ、「ちょどいいデザインを。ちょうどいいサービスを。ちょうどいい価値を。」これからもこの先も、変化しながら、提供してまります。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="l-about_culture">
+                            <figure class="l-about_culture_picture_wrapper ">
+                                <img class="l-about_culture_picture js-smoove_show_scale" src="./img/about/l-about_culture_img.jpg" alt="l-about_culture_img.jpg">
+                            </figure>
+                            <div class="l-about_culture_content_wrapper">
+                                <h2 class="l-about_culture_content_title">Culture</h2>
+                                <p class="l-about_culture_content">
+                                    古き企業文化を掘り起こし、社員旅行はもちろんのこと、社歌までつくりました。夏には恒例行事で暑中見舞い手ぬぐいを作ります。基本はやっぱりみんなデザインが好きなんですね。驚いてもらう、喜んでもらうことに情熱をかけてます。いたずら心をスパイスに。                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="l-about_info">
+                    <div class="l-about_info_wrapper">
+                        <div class="l-about_info_company">
+                            <h3 class="l-about_info_company_title">Company Profile</h3>
+                            <div class="l-about_info_content">
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">会社名</dt>
+                                    <dd class="l-about_info_txt">株式会社 ナップ</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">設立</dt>
+                                    <dd class="l-about_info_txt">2011年1月11日</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">代表</dt>
+                                    <dd class="l-about_info_txt">河田 慎</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">資本金</dt>
+                                    <dd class="l-about_info_txt">3,000,000円</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">事業内容</dt>
+                                    <dd class="l-about_info_txt">Web(スマートフォン)サイト制作・企画・構築、グラフィックデザイン、広告宣伝・販売促進の企画・制作、映像制作</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">所在地</dt>
+                                    <dd class="l-about_info_txt">〒150-0011 東京都渋谷区東2-17-10 岡本LKビル9F<br>Tel<a href="">03-6427-5627</a> Fax<a href="">03-6427-5628</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="l-about_info_company">
+                            <div class="l-about_info_content">
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">Company<br>name</dt>
+                                    <dd class="l-about_info_txt">KNAP inc.</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">Establisbed</dt>
+                                    <dd class="l-about_info_txt">January 11 ,2011</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">CEO</dt>
+                                    <dd class="l-about_info_txt">Makoto Kawata</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">Capital</dt>
+                                    <dd class="l-about_info_txt">¥3,000,000</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">Business activities</dt>
+                                    <dd class="l-about_info_txt">Business Graphic Design, Web Site Development Design, Advertising, Sales promotion planning</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">Address</dt>
+                                    <dd class="l-about_info_txt">Okamoto LK Building 9F, 17-10 higashi2-Chome, shibuya-ku, Tokyo, Japan 〒150-0011 <br>Tel <a href="">+81-3-6427-5627</a> 　Fax<a href="">+81-3-6427-5628</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="l-about_info_outline">
+                            <h3 class="l-about_info_outline_title">Outline</h3>
+                            <div class="l-about_info_content l-about_outline_content">
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">2011.01.11</dt>
+                                    <dd class="l-about_info_txt">設立時社員数3名。東京都飯田橋にあるインドカレー屋さんを1Fにした雑居ビルにて、カレーの香り漂う中、資本金300万円にて会社設立。</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">2011.05.30</dt>
+                                    <dd class="l-about_info_txt">早稲田大学を近くにする、オシャレ物件にオフィス移転。</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">2012.04.09</dt>
+                                    <dd class="l-about_info_txt">オシャレ物件は使い勝手が悪く、かねてからの目標だった、デザイン会社のメッカ、恵比寿(住所は広尾)に移転。</dd>
+                                </dl>
+                                <dl class="l-about_info_content_wrapper">
+                                    <dt class="l-about_info_title">2014.12.13</dt>
+                                    <dd class="l-about_info_txt">スタッフも多くなり、手狭なオフィス環境を脱するため、さらなる激戦区、渋谷方面へ移転(至現在)。</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="l-about_access">
+                    <div class="l-about_access_wrapper">
+                        <div class="l-about_access_picture_wrapper">
+                            <figure class="l-about_access_picture ">
+                                <img class="js-smoove_show_scale" src="./img/about/l-about_access_img.jpg" alt="l-about_access_img.jpg">
+                            </figure>
+                        </div>
+                        <div class="l-about_access_content_wrapper">
+                            <h2 class="l-about_access_content_title">Access</h2>
+                            <ul class="l-about_access_content">
+                                <li class="l-about_access_content_list">〒150-0011　東京都渋谷区東2-17-10 岡本LKビル9F</li>
+                                <li class="l-about_access_content_list">JR 恵比寿駅（地下鉄 恵比寿駅）より徒歩10分</li>
+                                <li class="l-about_access_content_list">東急東横線 代官山駅より徒歩11分</li>
+                                <li class="l-about_access_content_list">JR 渋谷駅寄り徒歩15分</li>
+                                <li class="l-about_access_content_list">明治通り沿いファミリーマートの横がビルのエントランスです。</li>
+                            </ul>
+                            <div class="l-about_access_content_map">
+                                <iframe class="l-about_access_map_iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.994750104295!2d139.70700831525798!3d35.65250098020101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6b3f2fe2a1%3A0x1a063dbbb9bfb7a3!2z5qCq5byP5Lya56S-44OK44OD44OX!5e0!3m2!1sja!2sjp!4v1573609108401!5m2!1sja!2sjp" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.994750104295!2d139.70700831525798!3d35.65250098020101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6b3f2fe2a1%3A0x1a063dbbb9bfb7a3!2z5qCq5byP5Lya56S-44OK44OD44OX!5e0!3m2!1sja!2sjp!4v1573609108401!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="l-about_next">
+                    <a class="l-about_next_link" href="./member.html">
+                        <h2 class="l-about_next_title">Next</h2>
+                        <p class="c-btn_next_wrapper">
+                                <svg class="c-btn_next_arrow" viewBox="0 0 180.1 38.8" xmlns="http://www.w3.org/2000/svg">                                <path d="M175.8,33.2H4.3v-3.9h142.3c-2.4-0.6-4.7-1.3-6.8-2c-28.6-9-37.2-21.2-37.5-21.6c4.8,4.3,27.7,12.4,39.5,16.4
+                                    c4.4,1.5,10.1,3.4,15.7,5.2C166.5,30.3,175.1,33,175.8,33.2L175.8,33.2z"/>
+                                </svg>Memberのご紹介
+                        </p>
+                    </a>
+                </div>
+                <div class="bottom_picture_wrapper l-about_bottom_picture">
+                    <figure class="bottom_picture">
+                        <img src="./img/about/l-bottom_about_img.png" alt="l-bottom_about_img.png">
+                    </figure>
+                    <a href="#" class="c-btn_bottom">
+                        <svg class="c-btn_bottom_pagetop" viewBox="0 0 216.31 226.77" xmlns="http://www.w3.org/2000/svg">                                <path d="M103.92,47.53c-5.34,15.73-9.26,31.58-21.01,43.69c11.52-18.96,17.73-39.91,23.49-61.37
+                            c5.11,21.56,12.31,42.09,23.58,61.08c-3.37-1.33-8.37-9.19-12.76-19.85c-3.08-7.46-5.69-15.12-8.57-22.85
+                            c-1.78,2.07-1.08,4.33-1.09,6.4c-0.04,46.62-0.01,93.24-0.11,139.86c0,1.67,1.42,4.78-1.25,4.86c-1.93,0.06-0.96-3.03-0.96-4.66
+                            c-0.07-46.79-0.05-93.57-0.07-140.36C105.17,52.22,105.59,50.01,103.92,47.53z"/></svg>
+                    </a>
+                </div>
+            </main>
+            <aside class="scroll_odometer">
+                <ul class="scroll_odometer_wrapper">
+                    <li id="th" class="scroll_odometer_th">0</li>
+                    <li id="h" class="scroll_odometer_h">0</li>
+                    <li id="t" class="scroll_odometer_t">0</li>
+                    <li class="subs-odometer"></li>
+                    <li class="scroll_odometer_max">5400 <span class="scroll_odometer_unit">feet</span></li>
+                </ul>
+            </aside>
+            <div id="about_banner" class="banner_wrapper">
+                <a href="./recruit.html" >
+                    <figure class="banner_picture"><img src="./img/common/l-banner_pc.jpg" alt="recruit"></figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="aside_access"  class="aside_access is-load">
+        <div class="aside_access_wrapper">
+            <bottom id="btn_close_access" class="c-btn_close_access hide">
+                <a href="#" class="js-pointer-events">
+                <ion-icon class="btn_close_access" name="close"></ion-icon>
+                </a>
+            </bottom>
+            <h2 id="access_title" class="aside_access_title">Access</h2>
+            <p id="access_txt" class="aside_access_txt">〒150-0011<br>東京都渋谷区東2-17-10 岡本LKビル9F</p>
+            <figure class="aside_access_map">
+                <iframe id="access_map" class="aside_access_map_iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3242.0118315901645!2d139.7069929646812!3d35.65208013020111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2x5Lqs6YO95riL6LC35Yy65p2xMi0xNy0xMCDlsqHmnKxMS-ODk-ODqzlG!5e0!3m2!1szh-TW!2stw!4v1644678680939!5m2!1szh-TW!2stw" frameborder="0" style="border: 0px;transform: matrix(1, 0, 0, 1, 0, 0);" allowfullscreen="" loading="lazy"></iframe>
+                <figcaption id="access_sub" class="aside_access_map_sub">
+                    JR 恵比寿駅（地下鉄 恵比寿駅）より徒歩10分 <br>東急東横線 代官山駅より徒歩11分<br>JR 渋谷駅寄り徒歩15分<br>明治通り沿いファミリーマートの横がビルのエントランスです。
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
+    <footer class="index_footer">
+        <div class="index_footer_wrapper">
+            <div class="index_footer_content">
+                <div class="index_footer_content_wrapper">
+                    <div class="index_footer_content_item">
+                        <h2 class="index_footer_content_item_title">Service</h2>
+                        <p class="index_footer_content_item_txt">ホームページ制作 / Webサイトデザイン / コピーライティング / 写真撮影 / 映像制作 / 広告制作 / パンフレットデザイン / チラシデザイン / ブランディング / ロゴデザイン / UIデザイン</p>
+                    </div>
+                    <div class="index_footer_content_item">
+                        <h2 class="index_footer_content_item_title">Equipment</h2>
+                        <p class="index_footer_content_item_txt">iPhone / Mac Book Pro / Sony / adobe CC / brother printer / FUJI Xerox printer / Blackmagic / DJI / Atomos / Manfrotto / Profoto</p>
+                    </div>
+                </div>
+                <p class="index_footer_content_adress">〒150-0011  東京都渋谷区東2-17-10 岡本LKビル9F 株式会社ナップ <br>Okamoto LK Building 9F, 2-17-10, shibuya-ku higashi, Tokyo, Japan  KNAP inc.</p>
+            </div>
+            <div class="index_footer_menu_wrapper">
+                <div class="index_footer_menu">
+                    <div class="index_footer_menu_content_wrapper">
+                        <ul class="index_footer_menu_content">
+                            <li class="index_footer_menu_content_list">
+                                <a href="./index.html" class="index_footer_menu_content_link js-hoverline-events">Home</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./works.html" class="index_footer_menu_content_link js-hoverline-events">Work</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./about.html" class="index_footer_menu_content_link pointer-events_line">About</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./service.html" class="index_footer_menu_content_link js-hoverline-events">Service</a>
+                            </li>
+                        </ul>
+                        <ul class="index_footer_menu_content">
+                            <li class="index_footer_menu_content_list"
+                            ><a href="./member.html" class="index_footer_menu_content_link js-hoverline-events">Member</a>
+                            </li>
+                            <li class="index_footer_menu_content_list">
+                                <a href="./recruit.html" class="index_footer_menu_content_link js-hoverline-events">Recruit</a>
+                            </li>
+                            <li id="aside_access_show" class="index_footer_menu_content_list">
+                                <a href="#aside_access" class="index_footer_menu_content_link js-hoverline-events ">Access</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="index_footer_menu_contact_wrapper">
+                    <div class="index_footer_menu_contact_title_wrapper">
+                        <a href="./contact.html" class="index_footer_menu_contact_title">Contact</a>
+                    </div>
+                    <div class="index_footer_menu_same_wrapper">
+                        <ul class="index_footer_menu_same">
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">blog</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">yomoyamo</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">comogomo</a>
+                            </li>
+                        </ul>
+                        <ul class="index_footer_menu_same">
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">Instagram</a>
+                            </li>
+                            <li class="index_footer_menu_same_list">
+                                <a href="" class="index_footer_menu_same_link">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="index_footer_copyright">
+                <small>copyright &copy; — all rights reversed.</small>
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery原生碼 CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JS slick 輪播圖 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- smoove js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.11/jquery.smoove.min.js"></script>
+    <!-- JS Odometer  -->
+    <script src="./js/odometer.min.js"></script>
+    <!-- 自定義JS -->
+    <script src="./js/myjs.js"></script>
+</body>
+</html>
